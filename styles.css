@@ -9,8 +9,13 @@ html, body {
 }
 
 @font-face {
-  font-family: 'Forward'; /* set name */
-  src: url(fonts/Forward.woff2); /* url of the font */
+  font-family: 'Forward';
+  src: url(fonts/Forward.woff2);
+}
+
+@font-face {
+  font-family: 'Lathusca';
+  src: url(fonts/Lathusca.woff2);
 }
 
 body {
@@ -36,9 +41,9 @@ body {
   grid-template-areas:
     "p2"
     "p6"
-    "p1"
-    "p5"
     "p3"
+    "p5"
+    "p1"
     "p4";
 }
 
@@ -55,7 +60,10 @@ body {
 #panel-2 { grid-area: p2; }
 #panel-3 { grid-area: p3; }
 #panel-4 { grid-area: p4; }
-#panel-5 { grid-area: p5; }
+#panel-5 { 
+  grid-area: p5;
+  cursor: pointer;
+}
 #panel-6 { grid-area: p6; }
 
 .panel {
@@ -120,26 +128,28 @@ img.panel-element {
   line-height: 1.55;
 }
 
+.date-text {
+  font-family: 'Forward';
+  color: #4f4f45;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1.55;
+}
+
 .frame-title {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
+  font-family: 'Lathusca', serif;
   font-weight: 600;
   color: #f7f4ea;
   white-space: nowrap;
 }
 
-.venue-title,
-.info-title {
-  font-family: 'Playfair Display', serif;
+.venue {
+  font-family: 'Lathusca', serif;
   font-weight: 500;
   letter-spacing: 0.05em;
-  color: #5c6e7a;
+  color: #697b82;
   white-space: nowrap;
 }
-.info-title {
-  font-style: italic;
-}
-
 .card-text {
   display: inline-block;
   background: #f7f4ea;
@@ -150,6 +160,7 @@ img.panel-element {
 }
 
 .sticky-note {
+  font-family: 'Forward', serif;
   display: flex;
   background: #e5e1d4;
   padding: 0.5em 0.7em;
@@ -162,24 +173,16 @@ img.panel-element {
 }
 
 .date-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lathusca', serif;
   font-weight: 500;
   color: #7c8a95;
   text-align: center;
   line-height: 1.15;
 }
 
-.date-value {
-  font-family: 'Caveat', cursive;
-  font-weight: 600;
-  color: #6b7d80;
-  text-align: center;
-  line-height: 1.2;
-}
-
 img.framed-photo {
   background: #f7f4ea;
-  padding: 5px;
+  padding: 6px;
   box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.18);
   object-fit: cover;
 }
