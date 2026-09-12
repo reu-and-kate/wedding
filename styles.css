@@ -20,6 +20,7 @@ html, body {
 
 body {
   font-family: 'Forward', serif;
+  overflow-x: hidden; 
 }
 
 .background {
@@ -53,6 +54,9 @@ body {
     grid-template-areas:
       "p1 p2 p3"
       "p4 p5 p6";
+  }
+  .body{
+    overflow: hidden;
   }
 }
 
