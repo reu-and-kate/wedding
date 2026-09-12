@@ -15,6 +15,16 @@ class Panel {
     return img;
   }
 
+  setBackgroundColor(clr) {
+    const bg = document.createElement('img');
+    bg.alt = '';
+    bg.className = 'panel-background';
+    bg.style.backgroundColor = clr;
+    bg.style.transform = 'scale(0.7)';
+    this.el.appendChild(bg);
+    return bg;
+  }
+
   addElement(
     src,
     xOffset = 0,

@@ -12,8 +12,8 @@ panel1.addText('(coming soon)', 0.15, 0.1, 0.04, -3, 0.045, -5, 'card-text');
 // Panel 2 - Title
 const panel2 = new Panel('panel-2', { aspectRatio: 3 / 2 });
 
-panel2.addText("Kate & Reu's", 0, -0.14, 0.13, -2, null, null, 'title-text');
-panel2.addText('Wedding', 0.06, 0.14, 0.15, -2, null, null, 'title-text');
+panel2.addText("Kate & Reu's", 0, -0.05, 0.15, -20, null, null, 'title-text');
+panel2.addText('Wedding', 0.06, 0.22, 0.17, -20, null, null, 'title-text');
 
 // Panel 3 - Registry link
 const panel3 = new Panel('panel-3', { aspectRatio: 4 / 3 });
@@ -36,10 +36,11 @@ panel4.addElement('images/green-stars.webp', -0.36, -0.15, 0.2, 0);
 // Panel 5 - Venue information
 const panel5 = new Panel('panel-5', { aspectRatio: 4 / 3 });
 
-panel5.addText('Venue', -0.34, -0.36, 0.08, 0, null, null, 'venue-title');
-panel5.addText('Information', 0.3, 0.4, 0.08, 0, null, null, 'info-title');
-panel5.addText('Kortright Centre<br>For Conservation', -0.24, -0.05, 0.04, -4, null, null, 'card-text');
-panel5.addElement('images/white-dotted-stamp.svg', 0.12, 0.1, 0.34, 3, 0.36, 5);
+panel5.setBackgroundColor("#5c6e7a");
+panel5.addText('Venue', -0.34, -0.41, 0.08, 0, null, null, 'venue-title');
+panel5.addText('Information', 0.2, 0.4, 0.08, 0, null, null, 'info-title');
+panel5.addText('Kortright Centre<br>For Conservation', -0.2, -0.2, 0.04, -4, 0.042, -5, 'card-text');
+panel5.addElement('images/white-dotted-stamp.svg', 0.12, 0.1, 0.44, 3, 0.46, 5);
 panel5.addElement('images/sparkle.png', -0.4, 0.38, 0.06, 0);
 
 // Panel 6 - Save the date
