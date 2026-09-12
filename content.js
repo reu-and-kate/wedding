@@ -12,7 +12,7 @@ panel1.addText('(coming soon)', 0.15, 0.1, 0.04, -3, 0.045, -5, 'card-text');
 // Panel 2 - Title
 const panel2 = new Panel('panel-2', { aspectRatio: 3 / 2 });
 
-panel2.addText("Kate &amp; Reu's", 0, -0.14, 0.13, -2, null, null, 'title-text');
+panel2.addText("Kate & Reu's", 0, -0.14, 0.13, -2, null, null, 'title-text');
 panel2.addText('Wedding', 0.06, 0.14, 0.15, -2, null, null, 'title-text');
 
 // Panel 3 - Registry link
