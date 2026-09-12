@@ -48,7 +48,7 @@ class Panel {
     text,
     xOffset = 0,
     yOffset = 0,
-    scale = 0.06,
+    scale = 1,
     rotation = 0,
     hoverScale = null,
     hoverRotation = null,
@@ -62,14 +62,13 @@ class Panel {
     return div;
   }
 
-  /** Shared positioning/scaling/rotation/hover logic for any element type. */
   _place(node, xOffset, yOffset, scale, rotation, hoverScale, hoverRotation) {
     node.classList.add('panel-element');
 
-    node.style.left = `${50 + xOffset * 100}%`;
-    node.style.top = `${50 + yOffset * 100}%`;
+    node.style.left = `${50 + xOffset}%`;
+    node.style.top = `${50 + yOffset}%`;
 
-    node.style.fontSize = `${scale * 100}cqw`;
+    node.style.fontSize = `${scale}cqw`;
     node.style.setProperty('--scale', scale);
     node.style.setProperty('--rot', `${rotation}deg`);
 
